@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="@dimen/base_padding">
+
+    <ImageView
+        android:id="@+id/i_photo_iv"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:contentDescription="@string/photo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_size"
+        android:layout_marginLeft="@dimen/base_padding"
+        android:layout_marginStart="@dimen/base_padding"
+        android:layout_toEndOf="@+id/i_photo_iv"
+        android:layout_toRightOf="@+id/i_photo_iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/i_login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/i_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
